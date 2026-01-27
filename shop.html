@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>E-CBD - Boutique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Découvrez la sélection de fleurs de CBD E-CBD, issues de chanvre légal en Europe.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/cart.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html">E-CBD</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="shop.html">Boutique</a>
+        <a href="cart.html">Panier</a>
+        <a href="legal/analyses-labo.html">Analyses labo</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="padding-top:2rem;">
+      <h1>Nos fleurs de CBD</h1>
+      <p style="margin:0.75rem 0 1.5rem;">
+        Fleurs de chanvre riches en CBD, issues de variétés autorisées dans l’Union européenne, avec un taux de THC conforme à la réglementation en vigueur.
+      </p>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <h2>Green Relax</h2>
+          <p class="product-desc">Fleur de CBD au profil équilibré, notes végétales douces.</p>
+          <p class="product-price">9,90 € / 2 g</p>
+          <button class="btn-primary"
+                  onclick="addToCart({id:'green-relax', name:'Green Relax', price:9.90})">
+            Ajouter au panier
+          </button>
+        </article>
+
+        <article class="product-card">
+          <h2>Night Calm</h2>
+          <p class="product-desc">Fleur de CBD sélectionnée pour son aspect et son profil aromatique.</p>
+          <p class="product-price">11,90 € / 2 g</p>
+          <button class="btn-primary"
+                  onclick="addToCart({id:'night-calm', name:'Night Calm', price:11.90})">
+            Ajouter au panier
+          </button>
+        </article>
+
+        <article class="product-card">
+          <h2>Citrus Breeze</h2>
+          <p class="product-desc">Fleur de CBD aux notes d’agrumes, issue de chanvre européen.</p>
+          <p class="product-price">13,90 € / 2 g</p>
+          <button class="btn-primary"
+                  onclick="addToCart({id:'citrus-breeze', name:'Citrus Breeze', price:13.90})">
+            Ajouter au panier
+          </button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> E-CBD. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="legal/mentions-legales.html">Mentions légales</a>
+        <a href="legal/cgv.html">CGV</a>
+        <a href="legal/politique-confidentialite.html">Politique de confidentialité</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
 
