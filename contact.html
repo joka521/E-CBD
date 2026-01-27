@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>E-CBD - Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez E-CBD pour toute question sur nos fleurs de CBD.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html">E-CBD</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Accueil</a>
+        <a href="shop.html">Boutique</a>
+        <a href="cart.html">Panier</a>
+        <a href="legal/analyses-labo.html">Analyses labo</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" style="padding-top:2rem;">
+      <h1>Contact</h1>
+      <p style="margin:0.75rem 0 1.5rem; max-width:600px;">
+        Pour toute question sur nos produits, la disponibilité des fleurs ou une commande test, 
+        vous pouvez nous écrire via ce formulaire.
+      </p>
+
+      <form class="contact-form" action="mailto:tonemail@example.com" method="post" enctype="text/plain">
+        <label>
+          Nom :
+          <input type="text" name="nom" required>
+        </label>
+        <label>
+          Email :
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message :
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </form>
+
+      <p style="margin-top:1rem; font-size:0.9rem;">
+        Ce formulaire ouvre votre application de messagerie pour envoyer l’email. 
+        Le système de commande en ligne est en cours de développement.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> E-CBD. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="legal/mentions-legales.html">Mentions légales</a>
+        <a href="legal/cgv.html">CGV</a>
+        <a href="legal/politique-confidentialite.html">Politique de confidentialité</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
 
