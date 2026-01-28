@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -29,11 +28,73 @@
     <section class="container" style="padding-top:2rem;">
       <h1>Nos fleurs de CBD</h1>
       <p style="margin:0.75rem 0 1.5rem;">
-        Fleurs de chanvre riches en CBD, issues de variétés autorisées dans l’Union européenne, avec un taux de THC conforme à la réglementation en vigueur.
+        Fleurs de chanvre riches en CBD, issues de variétés autorisées dans l'Union européenne, avec un taux de THC conforme à la réglementation en vigueur.
       </p>
 
       <div class="products-grid">
-        <!-- Produit 1 : Green Relax -->
+        <!-- GAMME PREMIUM DU CHANVRIER -->
+        <h2 style="grid-column: 1 / -1; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.3rem; color: #1a3a3a;">Gamme Premium - L'Entrepôt du Chanvrier</h2>
+
+        <!-- Produit 1 : Amnesia Haze Hydro -->
+        <article class="product-card">
+          <h2>Amnesia Haze Hydro</h2>
+          <p class="product-desc">Fleur de CBD cultivée en hydroponie suisse. Qualité exceptionnelle, saveurs acidulées.</p>
+          <p class="product-price">32,00 € / 2 g</p>
+          <button class="btn-primary"
+                  onclick="addToCart({id:'amnesia-haze', name:'Amnesia Haze Hydro', price:32.00})">
+            Ajouter au panier
+          </button>
+          <a href="product-amnesia-haze.html" class="btn-secondary" style="margin-top:0.5rem; display:inline-block;">
+            Voir le produit
+          </a>
+        </article>
+
+        <!-- Produit 2 : Tropical Kush Indoor -->
+        <article class="product-card">
+          <h2>Tropical Kush Indoor</h2>
+          <p class="product-desc">Fleur de CBD au profil équilibré, saveurs tropicales exquises.</p>
+          <p class="product-price">17,00 € / 2 g</p>
+          <button class="btn-primary"
+                  onclick="addToCart({id:'tropical-kush', name:'Tropical Kush Indoor', price:17.00})">
+            Ajouter au panier
+          </button>
+          <a href="product-tropical-kush.html" class="btn-secondary" style="margin-top:0.5rem; display:inline-block;">
+            Voir le produit
+          </a>
+        </article>
+
+        <!-- Produit 3 : Green Gelato Indoor -->
+        <article class="product-card">
+          <h2>Green Gelato Indoor</h2>
+          <p class="product-desc">Fleur de CBD au profil sucré et fruité, rapport qualité-prix exceptionnel.</p>
+          <p class="product-price">17,00 € / 2 g</p>
+          <button class="btn-primary"
+                  onclick="addToCart({id:'green-gelato', name:'Green Gelato Indoor', price:17.00})">
+            Ajouter au panier
+          </button>
+          <a href="product-green-gelato.html" class="btn-secondary" style="margin-top:0.5rem; display:inline-block;">
+            Voir le produit
+          </a>
+        </article>
+
+        <!-- Produit 4 : Strawberry Greenhouse -->
+        <article class="product-card">
+          <h2>Strawberry Greenhouse</h2>
+          <p class="product-desc">Fleur de CBD cultivée en serre, saveurs fruitées sucrées. Meilleur prix !</p>
+          <p class="product-price">12,00 € / 2 g</p>
+          <button class="btn-primary"
+                  onclick="addToCart({id:'strawberry', name:'Strawberry Greenhouse', price:12.00})">
+            Ajouter au panier
+          </button>
+          <a href="product-strawberry.html" class="btn-secondary" style="margin-top:0.5rem; display:inline-block;">
+            Voir le produit
+          </a>
+        </article>
+
+        <!-- GAMME DE BASE ORIGINAL -->
+        <h2 style="grid-column: 1 / -1; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.3rem; color: #1a3a3a;">Nos Classiques</h2>
+
+        <!-- Produit 5 : Green Relax -->
         <article class="product-card">
           <h2>Green Relax</h2>
           <p class="product-desc">Fleur de CBD au profil équilibré, notes végétales douces.</p>
@@ -51,7 +112,7 @@
           </a>
         </article>
 
-        <!-- Produit 2 : Night Calm -->
+        <!-- Produit 6 : Night Calm -->
         <article class="product-card">
           <h2>Night Calm</h2>
           <p class="product-desc">Fleur de CBD sélectionnée pour son aspect et son profil aromatique.</p>
@@ -62,10 +123,10 @@
           </button>
         </article>
 
-        <!-- Produit 3 : Citrus Breeze -->
+        <!-- Produit 7 : Citrus Breeze -->
         <article class="product-card">
           <h2>Citrus Breeze</h2>
-          <p class="product-desc">Fleur de CBD aux notes d’agrumes, issue de chanvre européen.</p>
+          <p class="product-desc">Fleur de CBD aux notes d'agrumes, issue de chanvre européen.</p>
           <p class="product-price">13,90 € / 2 g</p>
           <button class="btn-primary"
                   onclick="addToCart({id:'citrus-breeze', name:'Citrus Breeze', price:13.90})">
@@ -91,4 +152,3 @@
   </footer>
 </body>
 </html>
-
