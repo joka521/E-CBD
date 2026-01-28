@@ -339,3 +339,78 @@ section {
   text-align: center;
   margin-bottom: 0.5rem;
   padding: 0.75rem 1rem;
+
+  /* Animated Promo Banner */
+.promo-banner {
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 50%, #FFA500 100%);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+  animation: slideDown 0.6s ease-out, pulse 2s ease-in-out infinite 0.6s;
+}
+
+.promo-banner::before {
+  content: '🎁';
+  display: inline-block;
+  margin-right: 0.5rem;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.promo-text {
+  display: inline-block;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 40px rgba(255, 107, 107, 0.8);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-banner {
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+  }
+}
