@@ -2,148 +2,225 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Amnesia Haze Hydro - Fleur de CBD Premium | E-CBD</title>
+  <title>Amnésia Haze Hydro - Fleur CBD Premium | E-CBD</title>
+  <meta name="description" content="Amnésia Haze Hydro : fleur de CBD cultivée en hydroponie suisse. Qualité exceptionnelle, THC < 0,3%, analyses labo.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Amnesia Haze Hydro, fleur de CBD cultivée en Suisse en hydroponie avec buds de qualité incroyable et saveurs acidulées.">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/cart.js"></script>
+  <style>
+    .product-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      padding: 3rem 0;
+    }
+    .product-image {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+    .product-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .product-info h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      color: #1f2937;
+    }
+    .product-badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    .product-price {
+      font-size: 2rem;
+      color: #10b981;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+    .product-desc {
+      color: #6b7280;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    .product-specs {
+      background: #f9fafb;
+      padding: 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+    }
+    .product-specs h3 {
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .spec-item {
+      padding: 1rem;
+      background: white;
+      border-radius: 6px;
+      border-left: 3px solid #10b981;
+    }
+    .spec-label {
+      font-size: 0.85rem;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .spec-value {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-top: 0.5rem;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #10b981;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      transition: all 0.3s;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+    }
+    .cta-button:hover {
+      background: #059669;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(16, 185, 129, 0.3);
+    }
+    @media (max-width: 768px) {
+      .product-hero {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .product-info h1 {
+        font-size: 1.6rem;
+      }
+      .specs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-content">
-      <div class="logo">
-        <a href="index.html">E-CBD</a>
-      </div>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🌿 E-CBD</a>
       <nav class="main-nav">
         <a href="index.html">Accueil</a>
         <a href="shop.html">Boutique</a>
-        <a href="cart.html">Panier</a>
-        <a href="legal/analyses-labo.html">Analyses labo</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="container" style="padding-top:2rem; padding-bottom:2.5rem;">
-      <a href="shop.html" style="font-size:0.9rem;">← Retour à la boutique</a>
+    <div class="container">
+      <a href="shop.html" style="color: #10b981; text-decoration: none; margin-bottom: 1rem; display: inline-block;">← Retour à la boutique</a>
 
-      <div style="display:grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap:2rem; margin-top:1.5rem;">
-        <!-- Colonne gauche : description -->
-        <div>
-          <h1>Amnesia Haze Hydro - Fleur de CBD Premium</h1>
-          <p style="margin-top:0.75rem;">
-            L'Amnesia Haze est le fer de lance de notre gamme premium. Cultivée en Suisse via des systèmes hydroponiques, 
-            cette variété bénéficie des meilleures conditions de développement. Ses têtes d'un vert clair hypnotisant, 
-            son odeur captivante et son goût acidulé digne des meilleures fleurs en font un incontournable. 
-            La tester, c'est l'adopter !
-          </p>
-
-          <h2 style="margin-top:1.5rem; font-size:1.1rem;">Caractéristiques</h2>
-          <ul style="margin-top:0.75rem; padding-left:1.2rem;">
-            <li>Origine : Suisse (culture hydroponique premium)</li>
-            <li>Culture : Hydroponie (système aquatique contrôlé)</li>
-            <li>Taux de CBD : 10-12% selon la version</li>
-            <li>Taux de THC : ≤ 0,3 %, conformément à la réglementation en vigueur</li>
-            <li>Profil aromatique : Acidulé, herbacé, notes épicées subtiles</li>
-            <li>Apparence : Vert clair hypnotisant, buds volumineux et denses</li>
-            <li>Technique : Hydroponie (haute qualité)</li>
-          </ul>
-
-          <h2 style="margin-top:1.5rem; font-size:1.1rem;">Avantages de la culture hydroponique</h2>
-          <p style="margin-top:0.75rem;">
-            La culture en hydroponie permet un contrôle méticuleux de l'apport en nutriments et en eau, 
-            garantissant ainsi des fleurs de la plus haute qualité. Cette technique respectueuse de l'environnement 
-            minimise également l'utilisation de l'eau et des pesticides, tout en produisant des fleurs robustes 
-            d'un vert intense et de grande taille.
-          </p>
-
-          <h2 style="margin-top:1.5rem; font-size:1.1rem;">Utilisation</h2>
-          <p style="margin-top:0.75rem;">
-            Les fleurs de CBD sont des produits dérivés du chanvre légal. 
-            Elles ne sont pas destinées à diagnostiquer, traiter, guérir ou prévenir une maladie. 
-            Pour toute question relative à votre santé, consultez un professionnel de santé.
-          </p>
-
-          <h2 style="margin-top:1.5rem; font-size:1.1rem;">Analyses de laboratoire</h2>
-          <p style="margin-top:0.75rem;">
-            Chaque lot d'Amnesia Haze est analysé en laboratoire accrédité (LEAF) et garantit un taux de THC 
-            inférieur à 0,3 %, assurant une commercialisation légale et sûre. 
-            Consultez la rubrique <a href="legal/analyses-labo.html">Analyses labo</a> pour les certificats.
-          </p>
+      <div class="product-hero">
+        <div class="product-image">
+          <img src="https://www.lentrepotduchanvrier.com/wp-content/uploads/2023/12/amnesia-haze-hydro.jpg" alt="Amnésia Haze Hydro" />
         </div>
 
-        <!-- Colonne droite : bloc achat -->
-        <div style="background-color:#ffffff; border-radius:0.75rem; padding:1.5rem; box-shadow:0 1px 3px rgba(15,23,42,0.1);">
-          <h2>Amnesia Haze Hydro</h2>
-          <p style="margin-top:0.5rem; font-size:0.95rem; color:#4b5563;">
-            Fleur de CBD premium cultivée en hydroponie suisse. Qualité exceptionnelle.
+        <div class="product-info">
+          <div class="product-badge">SUISSE - HYDROPONIE PREMIUM</div>
+          <h1>Amnésia Haze Hydro</h1>
+          
+          <div class="product-price">1,60 € / g</div>
+          <p class="product-desc">
+            Le fer de lance de notre gamme premium. Cultivée en Suisse via des systèmes hydoponiques, cette variété bénéficie des meilleures conditions de développement.
           </p>
 
-          <div style="margin-top:1rem;">
-            <p style="font-weight:600; font-size:1.1rem;">10,00 € / 2 g</p>
-            <p style="margin-top:0.25rem; font-size:0.9rem; color:#4b5563;">
-              À 5,00 €/g. Sachet de base €/g. Prix pour 2g (sachet de base)
-            </p>
+          <button class="cta-button" onclick="alert('Panier - Fonctionnalité à venir')">Ajouter au panier</button>
+          
+          <div class="product-specs">
+            <h3>🔌 Caractéristiques</h3>
+            <div class="specs-grid">
+              <div class="spec-item">
+                <div class="spec-label">Origine</div>
+                <div class="spec-value">Suisse</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Culture</div>
+                <div class="spec-value">Hydroponie</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Taux CBD</div>
+                <div class="spec-value">10-12%</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Taux THC</div>
+                <div class="spec-value">&lt; 0,3%</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Profil Arom.</div>
+                <div class="spec-value">Acidulé</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Apparence</div>
+                <div class="spec-value">Vert vif</div>
+              </div>
+            </div>
           </div>
 
-          <button class="btn-primary" style="margin-top:1rem; width:100%;"
-                  onclick="addToCart({id:'amnesia-haze', name:'Amnesia Haze Hydro', price:10.00})">
-            Ajouter au panier
-          </button>
-
-          <p style="margin-top:1rem; font-size:0.85rem; color:#4b5563;">
-            ✓ 100% Légal – THC < 0,3%<br>
-            ✓ Culture hydroponique suisse<br>
-            ✓ Qualité premium exceptionnelle<br>
-            ✓ Analysé en laboratoire accrédité<br>
-            Réservé aux personnes majeures.
-          </p>
+          <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1rem; border-radius: 6px; margin-top: 2rem;">
+            <p style="margin: 0; color: #92400e;">
+              <strong>⚖️ Légal & Certifié</strong><br>
+              THC &lt; 0,3% | Analyses labo | Réservé majeurs
+            </p>
+          </div>
         </div>
       </div>
 
-      <div style="margin-top:2rem;">
-        <h2 style="font-size:1.1rem;">Versions disponibles</h2>
-        <div style="margin-top:0.75rem;">
-          <p><strong>CBD (10%)</strong> – Effet léger ⭐⭐ – Détente douce, utilisation quotidienne</p>
-          <p style="margin-top:0.5rem;"><strong>MCP-N (30%)</strong> – Effet moyen ⭐⭐⭐ – Relaxation profonde avec légère euphorie</p>
-          <p style="margin-top:0.5rem;"><strong>10-OH-HHC (10%)</strong> – Effet fort ⭐⭐⭐⭐ – Relaxation puissante, réservé aux utilisateurs avertis</p>
-          <p style="margin-top:0.5rem;"><strong>CSA (10%)</strong> – Effet très intense ⭐⭐⭐⭐⭐ – High incomparable, expérience maximale</p>
+      <section style="margin: 4rem 0; padding: 3rem; background: #f9fafb; border-radius: 12px;">
+        <h2 style="margin-bottom: 2rem; color: #1f2937;">Avantages de la Hydroponie</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+          <div>
+            <h3 style="color: #10b981; margin-bottom: 1rem;">Qualité Contrôlée</h3>
+            <p>Chaque plant est cultivé sous conditions précises, garantissant une récurrence et une qualité exceptionnelle.</p>
+          </div>
+          <div>
+            <h3 style="color: #10b981; margin-bottom: 1rem;">Rendement Optimal</h3>
+            <p>La technique hydoponique offre une nutrition précise et résultats constants sans pesticides.</p>
+          </div>
+          <div>
+            <h3 style="color: #10b981; margin-bottom: 1rem;">Saveurs Complexes</h3>
+            <p>Émulsion complexe de terpenes. Arômes acidulés et fruités avec notes épicées subtiles.</p>
+          </div>
         </div>
-
-        <h2 style="font-size:1.1rem; margin-top:1.5rem;">Questions fréquentes</h2>
-        <details style="margin-top:0.75rem;">
-          <summary>Pourquoi l'Amnesia Haze coûte-t-elle plus cher que les autres ?</summary>
-          <p style="margin-top:0.5rem;">
-            L'Amnesia Haze est cultivée en hydroponie en Suisse avec un contrôle qualité maximal. 
-            Cette technique, plus coûteuse mais plus efficace, produit des buds de meilleure taille et densité. 
-            C'est un produit premium pour les connaisseurs.
-          </p>
-        </details>
-        <details style="margin-top:0.75rem;">
-          <summary>Peut-on utiliser toutes les versions au quotidien ?</summary>
-          <p style="margin-top:0.5rem;">
-            Les versions CBD et MCP-N conviennent à un usage quotidien. 
-            Les versions 10-OH-HHC et CSA offrent des effets plus intenses et sont recommandées 
-            pour ceux ayant de l'expérience avec les cannabinoïdes.
-          </p>
-        </details>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-content">
-      <p>&copy; <span id="year"></span> E-CBD. Tous droits réservés.</p>
-      <div class="footer-links">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> E-CBD | Tous droits réservés</p>
+      <nav class="footer-nav">
+        <a href="contact.html">Contact</a>
         <a href="legal/mentions-legales.html">Mentions légales</a>
         <a href="legal/cgv.html">CGV</a>
-        <a href="legal/politique-confidentialite.html">Politique de confidentialité</a>
-      </div>
+      </nav>
     </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
