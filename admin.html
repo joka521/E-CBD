@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - E-CBD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="login-container" style="text-align: center; padding-top: 50px;">
+        <h2>Connexion Admin</h2>
+        <input type="password" id="password" placeholder="Mot de passe">
+        <button onclick="login()">Se connecter</button>
+    </div>
+
+    <div id="admin-panel" style="display: none;">
+        <header class="site-header">
+            <div class="container header-content">
+                <div class="logo">
+                    <a href="index.html">E-CBD - Admin</a>
+                </div>
+                <nav class="main-nav">
+                    <a href="javascript:void(0);" onclick="logout()">Déconnexion</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <h1>Gestion des Produits</h1>
+            <div id="product-list">
+                <!-- Les produits seront chargés ici -->
+            </div>
+            <div style="margin-top: 2rem;">
+                <h2>Ajouter un nouveau produit</h2>
+                <input type="text" id="new-product-name" placeholder="Nom du produit"><br>
+                <textarea id="new-product-desc" placeholder="Description"></textarea><br>
+                <input type="number" id="new-product-price" placeholder="Prix"><br>
+                <input type="text" id="new-product-image" placeholder="URL de l'image"><br>
+                <button onclick="addProduct()">Ajouter le produit</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="assets/js/admin.js"></script>
+</body>
+</html>
